@@ -21,7 +21,7 @@ pipeline {
 
         stage ("Code Coverage") {
             steps {
-                sh "./JacocoTestReport "
+                // sh "./JacocoTestReport "
                 sh "./JacocoTestCoverageVerification "
             }
         }
