@@ -4,6 +4,7 @@ pipeline {
           pollSCM('* * * * *')
      }
      // added comment here to test polling
+     // added another comment to test polling since the above didn't work
     stages {
         stage ("Checkout") {
             steps {
