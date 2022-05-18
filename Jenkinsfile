@@ -39,3 +39,29 @@ pipeline {
         }
     }
 }
+
+post {
+		always {
+			script {
+				echo 'Post build'
+			}
+		}
+		success {
+			script {
+				echo 'Success'
+			}
+		}
+		aborted {
+			script {
+				echo 'Aborted'
+			}
+		}
+		failure {
+			script {
+				echo 'Failure'
+			}
+		}
+		cleanup {
+		 	cleanWs()
+        }
+	}
