@@ -3,6 +3,7 @@ pipeline {
     triggers {
           pollSCM('* * * * *')
      }
+     // added comment here to test polling
     stages {
         stage ("Checkout") {
             steps {
