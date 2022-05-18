@@ -47,7 +47,7 @@ pipeline {
 		}
 		        success {
 			        script {
-				        echo 'Success'
+				        echo 'Yeah Boi !!!!!'
 			}
 		}
 		        aborted {
@@ -57,7 +57,7 @@ pipeline {
 		}
 		        failure {
 			        script {
-				        echo 'Failure'
+				        echo 'Ugh !!!!'
 			}
 		}
     }
