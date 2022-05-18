@@ -38,7 +38,7 @@ pipeline {
             }
         }
     }
-}
+
     post {
 		        always {
 			        script {
@@ -60,4 +60,6 @@ pipeline {
 				        echo 'Failure'
 			}
 		}
-    }    
+    }
+}
+        
