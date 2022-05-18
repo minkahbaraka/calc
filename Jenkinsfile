@@ -21,8 +21,8 @@ pipeline {
 
         stage ("Code Coverage") {
             steps {
-                sh "gradle ./JacocoTestReport "
-                sh "gradle ./JacocoTestCoverageVerification "
+                sh "./gradlew JacocoTestReport "
+                sh "./gradlew JacocoTestCoverageVerification "
             }
         }
     }
