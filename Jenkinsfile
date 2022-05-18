@@ -39,8 +39,7 @@ pipeline {
         }
     }
 }
-
-        post {
+    post {
 		        always {
 			        script {
 				        echo 'Post build'
@@ -61,7 +60,4 @@ pipeline {
 				        echo 'Failure'
 			}
 		}
-		        cleanup {
-		 	        cleanWs()
-        }
-	}
+    }    
